@@ -16,8 +16,13 @@ class TestDate {
         System.out.println("Please fill a year :");
         int year = sc.nextInt();
         sc.close();
+        
+        Calendar c = Calendar.getInstance();
+        int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
 
         // TODO : your code after this line
+        
+        System.out.println("The date is : " +  month +"-"+day+"-"+year + " The day of week is : " + dayOfWeek );
         
     }
 }
